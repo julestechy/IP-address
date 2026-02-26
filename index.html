@@ -20,39 +20,37 @@
   </head>
 
   <body>
-    <div class="top-section">
-      <div class="header">
-        <h4>Ip Address Tracker</h4>
-        <form action="return false;">
-          <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Search for any IP address or domain"
-          />
-          <button type="submit">
-            <img src="images/icon-arrow.svg" alt="Search" />
-          </button>
-        </form>
-      </div>
+    <div class="header">
+      <h4>IP Address Tracker</h4>
+      <form onsubmit="return false;">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search for any IP address or domain"
+        />
+        <button type="submit">
+          <img src="images/icon-arrow.svg" alt="Search" />
+        </button>
+      </form>
+    </div>
 
-      <div class="info-box">
-        <div class="info-col">
-          <p class="label">IP Address</p>
-          <p class="value" id="ip-display">--</p>
-        </div>
-        <div class="info-col">
-          <p class="label">Location</p>
-          <p class="value" id="location-display">--</p>
-        </div>
-        <div class="info-col">
-          <p class="label">Timezone</p>
-          <p class="value" id="timezone-display">--</p>
-        </div>
-        <div class="info-col">
-          <p class="label">ISP</p>
-          <p class="value" id="isp-display">--</p>
-        </div>
+    <div class="info-box">
+      <div class="info-col">
+        <p class="label">IP Address</p>
+        <p class="value" id="ip-display">--</p>
+      </div>
+      <div class="info-col">
+        <p class="label">Location</p>
+        <p class="value" id="location-display">--</p>
+      </div>
+      <div class="info-col">
+        <p class="label">Timezone</p>
+        <p class="value" id="timezone-display">--</p>
+      </div>
+      <div class="info-col">
+        <p class="label">ISP</p>
+        <p class="value" id="isp-display">--</p>
       </div>
     </div>
 
