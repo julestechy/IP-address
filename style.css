@@ -9,6 +9,11 @@
 body {
   font-family: "Rubik", sans-serif;
 }
+/* TOP SECTION */
+.top-section {
+  position: relative;
+  z-index: 10;
+}
 
 /* HEADER */
 .header {
@@ -59,12 +64,6 @@ body {
 
 .header button img {
   width: 12px;
-}
-
-/* TOP SECTION */
-.top-section {
-  position: relative;
-  z-index: 10;
 }
 
 /* INFO BOX */
