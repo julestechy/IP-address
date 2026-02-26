@@ -9,13 +9,12 @@
 body {
   font-family: "Rubik", sans-serif;
 }
-/* TOP SECTION */
+
 .top-section {
   position: relative;
   z-index: 10;
 }
 
-/* HEADER */
 .header {
   position: relative;
   background-image: url("images/pattern-bg-desktop.png");
