@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-:root {
-  --glass: rgba(255, 255, 255, 0.08);
-  --glass-border: rgba(255, 255, 255, 0.2);
-  --glass-strong: rgba(255, 255, 255, 0.15);
-  --accent: #a78bfa;
-  --accent2: #38bdf8;
-  --text-bright: #ffffff;
-  --text-muted: rgba(255, 255, 255, 0.5);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -61,7 +51,7 @@ body {
 .header h4 {
   position: relative;
   z-index: 1;
-  color: var(--text-bright);
+  color: #e5e7eb;
   font-family: "Syne", sans-serif;
   font-size: 2rem;
   font-weight: 800;
@@ -89,8 +79,8 @@ body {
   outline: none;
   font-size: 1rem;
   font-family: "DM Sans", sans-serif;
-  color: var(--text-bright);
-  background: rgba(255, 255, 255, 0.1);
+  color: rgba(15, 12, 41, 0.75);
+  background: rgba(255, 249, 249, 0.1);
 }
 
 .header input::placeholder {
@@ -98,7 +88,7 @@ body {
 }
 
 .header button {
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  background: rgba(15, 12, 41, 0.75);
   border: none;
   padding: 0 1.4rem;
   cursor: pointer;
@@ -116,18 +106,16 @@ body {
 }
 
 .info-box {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   z-index: 9999;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(15, 12, 41, 0.75); /* darker, more opaque */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 20px;
-  box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
   width: 75%;
-  margin: -50px auto 0 auto;
+  margin: -60px auto 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   overflow: hidden;
@@ -138,7 +126,6 @@ body {
   padding: 2rem;
   border-right: 1px solid #e5e7eb;
   min-width: 0;
-  word-break: break-word;
   transition: 0.2s;
 }
 
@@ -151,7 +138,7 @@ body {
 }
 
 .info-col .label {
-  color: var(--accent);
+  color: #e5e7eb;
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -160,7 +147,7 @@ body {
 }
 
 .info-col .value {
-  color: var(--text-bright);
+  color: #e5e7eb;
   font-family: "Syne", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
@@ -198,7 +185,7 @@ body {
   .info-box {
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
-    margin: -50px auto 0 auto;
+    margin: -83px auto 0 auto;
   }
 
   .info-col {
